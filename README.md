@@ -20,13 +20,18 @@ $ ng serve --open
 - Infinite pagination of the posts.
 - Loading spinner on data loading.
 - Responsive on desktops, tablets & mobile screens.
-- Added unit tests for components.
 
+### Improvements
+
+- Server side rendering to improve initial page load speed & also enable SEO.
+- If posts api returns author name for each post, the number of api calls can be reduced.
+- Unit tests for components can be added.
+- Website look & feel can be improved.
 ---
 
-Please look at below screenshot showing lighthouse report on performance, accessibility, best practices & SEO.
+Please look at below screenshot showing lighthouse report on performance, accessibility and best practices.
 
-![alt text](https://github.com/arnab-1995/spacex/blob/assets/Metrics.PNG?raw=true)
+![alt text](https://github.com/arnab-1995/posts-app/blob/assets/src/assets/lighthouse_report.PNG?raw=true)
 
 ---
 
