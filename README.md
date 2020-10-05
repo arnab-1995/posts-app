@@ -1,27 +1,39 @@
-# PostsApp
+## Posts App.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+> A front-end application which lists out posts from the following API: https://gorest.co.in/. Each post has a read more link which navigates the user to another page which shows the post detail and also the comments on the post from various users. The user can post his own comment if he is logged in.
 
-## Development server
+Live Demo: https://xtposts-app.herokuapp.com/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+### Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the following steps in order
 
-## Build
+```shell
+$ npm install
+$ ng serve --open
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Features
 
-## Running unit tests
+- Infinite pagination of the posts.
+- Loading spinner on data loading.
+- Responsive on desktops, tablets & mobile screens.
+- Added unit tests for components.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+Please look at below screenshot showing lighthouse report on performance, accessibility, best practices & SEO.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![alt text](https://github.com/arnab-1995/spacex/blob/assets/Metrics.PNG?raw=true)
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Support
+
+Reach out to me at one of the following places!
+
+- Email me at coder200ok@gmail.com
+- Contact me at (+91) 8420383452
+- My LinkedIn profile <a href="https://www.linkedin.com/in/arnab-mullick-1b0665146/" target="_blank">here</a> 
