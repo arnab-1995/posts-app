@@ -1,0 +1,12 @@
+<div class="card mb-4">
+    <div class="card-body">
+        <h3 class="card-title">{{post.title}}</h3>
+        <p class="card-text">
+            {{summaryText}}
+        </p>
+        <button (click)="navigateToPostDetail()" class="btn btn-primary">Read More &rarr;</button>
+    </div>
+    <div class="card-footer text-muted">
+        Posted on <b>{{post.created_at | date}}</b> by <i>{{post.author}}</i>
+    </div>
+</div>

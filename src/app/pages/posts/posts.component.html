@@ -1,0 +1,8 @@
+<div class="container" infiniteScroll [infiniteScrollDistance]="1"
+    (scrolled)="onScroll()">
+    <div class="row">
+        <div class="col-md-6" *ngFor="let post of posts">
+            <app-post [post]="post"></app-post>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: #5161ce;
+
+body{
+    padding-top: 5rem;
+}
+
+.loading-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border: 1px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border: 1px solid #a94442; /* red */
+  }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

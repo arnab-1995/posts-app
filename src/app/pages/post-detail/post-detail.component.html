@@ -1,0 +1,44 @@
+<div class="container" *ngIf="post">
+    <!-- Title -->
+    <h1 class="mt-4">{{post?.title}}</h1>
+
+    <!-- Author -->
+    <p class="lead">
+        by
+        <i>{{post?.author}}</i>
+    </p>
+
+    <hr>
+
+    <!-- Date/Time -->
+    <p>Posted on {{post?.created_at | date: 'medium'}}</p>
+
+    <hr>
+
+    <!-- Post Content -->
+    <p>{{post?.body}}</p>
+
+    <hr>
+
+    <!-- Comments Form -->
+    <div class="card my-4 w-100">
+        <h5 class="card-header">Leave a Comment:</h5>
+        <div class="card-body">
+            <form #commentForm ="ngForm" (submit)="onPostComment()">
+                <div class="form-group">
+                    <textarea name="comment" class="form-control" rows="3" [(ngModel)]="postComment" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="commentForm.invalid">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Single Comment -->
+    <div class="media mb-4" *ngFor="let comment of post.comments">
+        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+        <div class="media-body">
+            <h5 class="mt-0">{{comment.name}}</h5>
+            {{comment.body}}
+        </div>
+    </div>
+</div>
